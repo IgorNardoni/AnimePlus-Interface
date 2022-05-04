@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root {
+    --azul-ciano: rgb(0, 168, 225);
+    --preto: rgb(20, 20, 20);
+    
+   --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+   --fonte-destaque: 'Patrick Hand', serif;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background-color: var(--preto);
+    color: white
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.container > h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--azul-ciano);
+    font-size: 3.5em;
+    
+}
+
+.container > p.navbar {
+    display: block;
+    
+    font-family: var(--fonte-destaque);
+    color: var(--azul-ciano);
+    font-size: 1.2em;
+    margin-right: 300px;
+    text-shadow: 1px 1px 1px lightblue;
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    color: rgb(170, 170, 170);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 5px solid var(--azul-ciano);
+    padding: 8px;
+    transition: 0.3s;
+}
+
+/*anime principal*/
+.anime-principal {
+    font-size: 16px;
+    font-family: var(--fonte-padrao);
+    background: linear-gradient(rgba(0, 0, 0, .50),rgba(0, 0, 0, .50) 100%), url('/img/capa-naruto-sasuke.jpg');
+
+    height: 650px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+.anime-principal .titulo {
+    margin-top: 200px;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+}
+
+.anime-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+ strong {
+    font-size: 30px;
+} 
+
+span {
+    font-size: 0.8em;
+    color: rgb(170, 170, 170);
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50); 
+    border: none; 
+    color: white; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+   padding: 15px 30px; 
+   margin-right: 20px;
+   font-size: 12px;
+
+   cursor: pointer;
+   transition: .5s ease all;
+}
+
+.botao:hover {
+    background-color: var(--azul-ciano);
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-animes {
+    height: 100%;
+    width: 100%;
+    display: block;
+}

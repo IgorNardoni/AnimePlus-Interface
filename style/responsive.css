@@ -1,0 +1,18 @@
+@media screen and (max-width: 900px){
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container > span.navbar {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .anime-principal {
+        background: linear-gradient(rgba(0, 0, 0, .50),rgba(0, 0, 0, .50) 100%), url('/img/capa-naruto-sasuke-2.jpg');
+        width: 100%;
+
+    }
+}
